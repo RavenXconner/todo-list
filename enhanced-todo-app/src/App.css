@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.App {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+body.dark h1 {
+  color: white;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+.filters button {
+  margin-right: 10px;
+}
+
+ul.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+button {
+  margin-left: 5px;
+}
+
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+input[type="text"], .todo-item {
+  background-color: white;
+}
+
+.dark input[type="text"], .dark .todo-item {
+  background-color: #555;
+  color: white;
+}
+
+.dark button {
+  background-color: #444;
+}
+
+.light button {
+  background-color: #007bff;
+}
